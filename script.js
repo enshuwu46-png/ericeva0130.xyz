@@ -1,4 +1,3 @@
-const progress = document.querySelector(".progress");
 const backgroundVideo = document.querySelector(".site-video-bg");
 const friendshipDays = document.querySelector("[data-friendship-days]");
 
@@ -13,15 +12,6 @@ const shanghaiDateFormatter = new Intl.DateTimeFormat("en-US", {
 });
 
 let friendshipTimer;
-
-function updateProgress() {
-  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-  const ratio = scrollable > 0 ? window.scrollY / scrollable : 0;
-  progress.style.width = `${Math.min(1, Math.max(0, ratio)) * 100}%`;
-}
-
-window.addEventListener("scroll", updateProgress, { passive: true });
-window.addEventListener("resize", updateProgress);
 
 function getShanghaiDateParts(date = new Date()) {
   const parts = Object.fromEntries(
@@ -87,5 +77,4 @@ if (backgroundVideo) {
   window.setTimeout(startBackgroundVideo, 600);
 }
 
-updateProgress();
 updateFriendshipCounter();
