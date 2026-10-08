@@ -245,6 +245,41 @@ main,
   outline-offset: 3px;
 }
 
+.friendship-declaration {
+  padding: 112px 22px 120px;
+  border-top: 1px solid var(--hairline);
+  background: #fff;
+  text-align: center;
+}
+
+.friendship-declaration h2 {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.16;
+}
+
+.friendship-declaration h2 span:last-child {
+  color: var(--rose);
+  font-size: 116px;
+}
+
+@media (max-width: 600px) {
+  .friendship-declaration {
+    padding: 80px 16px 88px;
+  }
+
+  .friendship-declaration h2 {
+    font-size: 40px;
+  }
+
+  .friendship-declaration h2 span:last-child {
+    font-size: 68px;
+  }
+}
+
 .downloads-band {
   width: 100%;
   max-width: none;
