@@ -261,11 +261,6 @@ main,
   line-height: 1.16;
 }
 
-.friendship-declaration h2 span:last-child {
-  color: var(--rose);
-  font-size: 116px;
-}
-
 @media (max-width: 600px) {
   .friendship-declaration {
     padding: 80px 16px 88px;
@@ -273,10 +268,6 @@ main,
 
   .friendship-declaration h2 {
     font-size: 40px;
-  }
-
-  .friendship-declaration h2 span:last-child {
-    font-size: 68px;
   }
 }
 
